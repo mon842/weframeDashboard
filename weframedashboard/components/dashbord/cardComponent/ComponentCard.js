@@ -4,21 +4,11 @@ import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
 const ComponentCard = ({img,color,tm}) => {
     return (
         <div className='w-72 md:w-72 lg:w-52 bg-white pb-2 rounded-lg text-gray-400 font-semibold'>
-            <Image
-                src={`/Image${img}.png`}
-                height={350}
-                width={260}
-                alt='img'
-            />
+
+            <img className='h-30 w-30 ' src={`/Image${img}.png`} alt='img' />
             <div className='flex justify-between mt-4 mx-2'>
                 <p className='text-xs from-neutral-400 '>Space Tasks 2</p>
-                <Image
-                    className='rounded-full'
-                    src={'/base.png'}
-                    height={30}
-                    width={20}
-                    alt='img'
-                />
+                <img className='h-5 w-5 rounded-full' src={'/dp5.png'} alt='img' />
             </div>
             <p className='text-sm my-4 ml-2 text-gray-500 font-bold'>Make Money Online Through</p>
             <div className='flex justify-between m-2'>

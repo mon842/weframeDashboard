@@ -19,7 +19,7 @@ const arr = [
     },
     {
         txt: 'Gnat',
-        h: 'hidden  md:block',
+        h: 'hidden ',
         d: "M7 21.5H11C11.55 21.5 12 21.05 12 20.5C12 19.95 11.55 19.5 11 19.5H7C6.45 19.5 6 19.95 6 20.5C6 21.05 6.45 21.5 7 21.5ZM6 10.5C6 11.05 6.45 11.5 7 11.5H23C23.55 11.5 24 11.05 24 10.5C24 9.95 23.55 9.5 23 9.5H7C6.45 9.5 6 9.95 6 10.5ZM7 16.5H17C17.55 16.5 18 16.05 18 15.5C18 14.95 17.55 14.5 17 14.5H7C6.45 14.5 6 14.95 6 15.5C6 16.05 6.45 16.5 7 16.5Z"
     },
     {
@@ -36,14 +36,22 @@ const arr = [
 
 const Controller = () => {
     return (
-        <div className='inline-flex flex-shrink py-6 rounded-lg'>
-
+        <div className='inline-flex flex-shrink py-6 rounded-lg sm:px-2'>
+            <button className='lg:hidden bg-white rounded-full m-3'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.073 17.7316L13.4517 14.1103L17.073 10.489C17.437 10.125 17.437 9.53698 17.073 9.17298C16.8986 8.99821 16.6619 8.89999 16.415 8.89999C16.1681 8.89999 15.9314 8.99821 15.757 9.17298L11.473 13.457C11.109 13.821 11.109 14.409 11.473 14.773L15.757 19.057C16.121 19.421 16.709 19.421 17.073 19.057C17.4277 18.693 17.437 18.0956 17.073 17.7316Z" fill="#C3CAD9" />
+                </svg>
+            </button>
             {
                 arr.map((item) => (
                     <ControllerOptions key={item.txt} txt={item.txt} d={item.d} h={item.h} />
                 ))
             }
-
+            <button className='lg:hidden bg-white rounded-full m-3'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.473 17.7317L15.0943 14.1103L11.473 10.489C11.2982 10.3146 11.2 10.0779 11.2 9.83099C11.2 9.58411 11.2982 9.34737 11.473 9.17299C11.837 8.80899 12.425 8.80899 12.789 9.17299L17.073 13.457C17.437 13.821 17.437 14.409 17.073 14.773L12.789 19.057C12.425 19.421 11.837 19.421 11.473 19.057C11.1183 18.693 11.109 18.0957 11.473 17.7317Z" fill="#C3CAD9" />
+                </svg>
+            </button>
             <div className='hidden flex ml-3 lg:block'>
                 <form className='w-52'>
                     <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
@@ -59,12 +67,11 @@ const Controller = () => {
                 </form>
             </div>
             <div className='lg:hidden'>
-                <button className='bg-white rounded-full w-16 h-16 flex justify-center items-center ml-5'>
-                    <svg className="w-8 h-8 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <button className='bg-white rounded-full w-14 h-14 flex justify-center items-center ml-5'>
+                    <svg className="w-6 h-6 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                     </svg>
                 </button>
-
             </div>
 
         </div>

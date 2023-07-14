@@ -5,7 +5,7 @@ import ComponentCard from './cardComponent/ComponentCard'
 
 const InWork = () => {
   return (
-    <div className='mx-10 lg:mx-4 mb-5'>
+    <div className='mx-10 lg:mx-4 mb-3  mt-4 '>
         <ComponentHead text={'IN WORK'}  color={'border-blue-500'}/>
         <ComponentDec/>
         <ComponentCard img={2} color={'red'} tm={1}/>

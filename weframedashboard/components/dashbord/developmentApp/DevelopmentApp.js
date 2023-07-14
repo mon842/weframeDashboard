@@ -24,7 +24,7 @@ const arr = [
 
 const DevelopmentApp = () => {
   return (
-    <div className='mx-8 bg-white w-4/5 rounded-lg p-5 mb-6'>
+    <div className='mx-5 lg:mx-8 bg-white lg:w-4/5 rounded-lg p-5 mb-6'>
 
       <div className='flex justify-between mt-3'>
         <div className='flex justify-between'>
