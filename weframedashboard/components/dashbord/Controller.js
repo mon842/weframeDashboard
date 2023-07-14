@@ -2,7 +2,7 @@ import React from 'react'
 
 const Controller = () => {
     return (
-        <div className='inline-flex flex-shrink py-6 border-solid border-4 border-gray-200 rounded-lg'>
+        <div className='inline-flex flex-shrink py-6 rounded-lg'>
             
             <div className='hidden flex mx-8 lg:block'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
