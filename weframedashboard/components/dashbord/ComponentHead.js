@@ -2,9 +2,12 @@ import React from 'react'
 
 const ComponentHead = (props) => {
     return (
-        <div className='w-72 md:w-72 lg:w-52 p-5 flex space-x-4 bg-white rounded-lg mb-3'>
-            <div className='font-sm'>{props.text}</div>
-            <div className='w-14 h-7 bg-white rounded-full ring-1 ring-gray-300 pl-2'> 5 </div>
+        <div className='w-72 md:w-72 lg:w-52 p-5 flex  bg-white rounded-lg mb-3'>
+            <div className='text-base lg:text-xs w-12'>{props.text}</div>
+            {/* <div className='w-14 h-7 bg-white rounded-full ring-1 ring-gray-300 pl-2'> 5 </div> */}
+            <button className='w-12 h-8 bg-white rounded-full border-2 border-solid border-gray-400 mx-4'>
+                5
+            </button>
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9 13.5C7.9 13.5 7 14.4 7 15.5C7 16.6 7.9 17.5 9 17.5C10.1 17.5 11 16.6 11 15.5C11 14.4 10.1 13.5 9 13.5ZM21 13.5C19.9 13.5 19 14.4 19 15.5C19 16.6 19.9 17.5 21 17.5C22.1 17.5 23 16.6 23 15.5C23 14.4 22.1 13.5 21 13.5ZM15 13.5C13.9 13.5 13 14.4 13 15.5C13 16.6 13.9 17.5 15 17.5C16.1 17.5 17 16.6 17 15.5C17 14.4 16.1 13.5 15 13.5Z" fill="#C3CAD9" />
