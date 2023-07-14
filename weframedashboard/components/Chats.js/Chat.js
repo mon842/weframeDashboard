@@ -24,6 +24,24 @@ const arr = [
 
 ];
 
+const profiles=[
+    {
+        n:2,
+        col:'orange'
+    },
+    {
+        n:4,
+        col:'pink'
+    },
+    {
+        n:5,
+        col:'purple'
+    },
+    {
+        n:3,
+        col:'yellow'
+    },
+] 
 
 const Chat = () => {
     const [show, setShow] = useState('-translate-x-full');
@@ -34,18 +52,18 @@ const Chat = () => {
     }
 
     return (
-        <div className='border-gray-400 bg-gray-100 h-4'>
+        <div className=' bg-gray-100 h-4'>
 
             <button onClick={handleClick} data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar"
                 aria-controls="default-sidebar" type="button"
-                className="bg-white rounded-full inline-flex items-center p-2 top-0 ml-3 text-sm text-gray-500 hover:bg-gray-100 ">
+                className="border-gray-300 border-r-4 bg-white rounded-full inline-flex items-center p-2 top-0 ml-3 text-sm text-gray-500 hover:bg-gray-100 ">
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 31" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7 21.5H23C23.55 21.5 24 21.05 24 20.5C24 19.95 23.55 19.5 23 19.5H7C6.45 19.5 6 19.95 6 20.5C6 21.05 6.45 21.5 7 21.5ZM7 16.5H23C23.55 16.5 24 16.05 24 15.5C24 14.95 23.55 14.5 23 14.5H7C6.45 14.5 6 14.95 6 15.5C6 16.05 6.45 16.5 7 16.5ZM6 10.5C6 11.05 6.45 11.5 7 11.5H23C23.55 11.5 24 11.05 24 10.5C24 9.95 23.55 9.5 23 9.5H7C6.45 9.5 6 9.95 6 10.5Z" fill="#C3CAD9" />
                 </svg>
             </button>
 
-            <aside id="default-sidebar" className={`fixed   left-0 z-40 w-16 h-screen transition-transform ${show}  `} aria-label="Sidebar">
+            <aside  id="default-sidebar" className={`fixed border-gray-300 border-r-4   left-0 z-40 w-16 h-screen transition-transform ${show}  `} aria-label="Sidebar">
                 <div className="px-3 py-4 overflow-y-auto bg-gray-100 ">
                     <ul className="space-y-2 font-medium">
 
@@ -53,7 +71,7 @@ const Chat = () => {
                         {
                             arr.map((item) => (
                                 <li key={item.path}>
-                                    <button className="bg-white rounded-full ">
+                                    <button className="bg-white rounded-full ml-3 ">
                                         <svg width="25" height="25" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g id="Icon">
                                                 <path id="Icon_2" fill-rule="evenodd" clip-rule="evenodd" d={item.path} fill="#3361FF" />
@@ -67,13 +85,15 @@ const Chat = () => {
                     </ul>
                 </div>
 
-                <div className="h-full px-3 py-4 overflow-y-auto bg-gray-100 ">
+                <div className=" px-3 py-4 overflow-y-auto bg-gray-100 ">
                     <ul className="space-y-2 font-medium">
-                        <li>
-                            <button className='bg-orange-500 rounded-full'>
+                        
+                        { profiles.map(profile =>(
+                            <li key={profile.n}>
+                            <button className={`bg-${profile.col}-500 rounded-full`}>
                                 <Image
                                     className='rounded-full'
-                                    src={'/dp2.png'}
+                                    src={`/dp${profile.n}.png`}
                                     alt='img'
                                     height={30}
                                     width={30}
@@ -82,42 +102,8 @@ const Chat = () => {
 
 
                         </li>
-                        <li>
-                            <button className='bg-yellow-500 rounded-full'>
-                                <Image
-                                    className='rounded-full'
-                                    src={'/dp3.png'}
-                                    alt='img'
-                                    height={30}
-                                    width={30}
-                                />
-                            </button>
-
-                        </li>
-                        <li>
-                            <button className='bg-pink-500 rounded-full'>
-                                <Image
-                                    className='rounded-full'
-                                    src={'/dp4.png'}
-                                    alt='img'
-                                    height={30}
-                                    width={30}
-                                />
-                            </button>
-
-                        </li>
-                        <li>
-                            <button className='bg-purple-400 rounded-full'>
-                                <Image
-                                    className='rounded-full'
-                                    src={'/dp5.png'}
-                                    alt='img'
-                                    height={30}
-                                    width={30}
-                                />
-                            </button>
-                        </li>
-                        <li>
+                        ))}
+                        <li className='mb-10'>
                             <button className='bg-white rounded-full'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M21 16.5H16V21.5C16 22.05 15.55 22.5 15 22.5C14.45 22.5 14 22.05 14 21.5V16.5H9C8.45 16.5 8 16.05 8 15.5C8 14.95 8.45 14.5 9 14.5H14V9.5C14 8.95 14.45 8.5 15 8.5C15.55 8.5 16 8.95 16 9.5V14.5H21C21.55 14.5 22 14.95 22 15.5C22 16.05 21.55 16.5 21 16.5Z" fill="#C3CAD9" />
@@ -126,16 +112,11 @@ const Chat = () => {
 
                         </li>
 
-
                     </ul>
                 </div>
 
 
             </aside>
-
-            <div className="p-4 sm:ml-64">
-
-            </div>
 
         </div>
     )

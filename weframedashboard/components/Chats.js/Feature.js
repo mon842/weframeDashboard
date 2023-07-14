@@ -7,7 +7,7 @@ const Feature = (props) => {
                 <svg className='mx-4' xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d={props.img} fill="#C3CAD9" />
                 </svg>
-                <p className='mb-4 ml-2'>{props.txt}</p>
+                <p className='mb-4 ml-2 text-gray-400 font-semibold'>{props.txt}</p>
             </div>
         </div>
     )

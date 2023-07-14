@@ -5,10 +5,10 @@ const AddTask = () => {
     return (
         <div className='w-72 md:w-72 lg:w-52 bg-white h-28 rounded-lg p-3 '>
             <div className='flex justify-between'>
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 30 31" fill="none">
                     <path fillRule="evenodd" clipRule="evenodd" d="M20.8925 8.80249C20.7057 8.61523 20.452 8.51 20.1875 8.51C19.923 8.51 19.6693 8.61523 19.4825 8.80249L14.5925 13.6825L9.7025 8.79249C9.51567 8.60523 9.26202 8.5 8.9975 8.5C8.73298 8.5 8.47933 8.60523 8.2925 8.79249C7.9025 9.18249 7.9025 9.81249 8.2925 10.2025L13.1825 15.0925L8.2925 19.9825C7.9025 20.3725 7.9025 21.0025 8.2925 21.3925C8.6825 21.7825 9.3125 21.7825 9.7025 21.3925L14.5925 16.5025L19.4825 21.3925C19.8725 21.7825 20.5025 21.7825 20.8925 21.3925C21.2825 21.0025 21.2825 20.3725 20.8925 19.9825L16.0025 15.0925L20.8925 10.2025C21.2725 9.82249 21.2725 9.18249 20.8925 8.80249Z" fill="#C3CAD9" />
                 </svg>
-                <p>Task name or type</p>
+                <p className='text-sm text-gray-500'>Task name or type</p>
                 <Image
                     className='rounded-full'
                     src={'/base.png'}
@@ -28,7 +28,7 @@ const AddTask = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M14.99 5.5C9.47 5.5 5 9.98 5 15.5C5 21.02 9.47 25.5 14.99 25.5C20.52 25.5 25 21.02 25 15.5C25 9.98 20.52 5.5 14.99 5.5ZM15 23.5C10.58 23.5 7 19.92 7 15.5C7 11.08 10.58 7.5 15 7.5C19.42 7.5 23 11.08 23 15.5C23 19.92 19.42 23.5 15 23.5ZM14.78 10.5H14.72C14.32 10.5 14 10.82 14 11.22V15.94C14 16.29 14.18 16.62 14.49 16.8L18.64 19.29C18.98 19.49 19.42 19.39 19.62 19.05C19.83 18.71 19.72 18.26 19.37 18.06L15.5 15.76V11.22C15.5 10.82 15.18 10.5 14.78 10.5Z" fill="#C3CAD9" />
                 </svg>
-                <button class="text-white bg-blue-600 rounded-xl px-2">Save</button>
+                <button class="text-white bg-blue-600 rounded-lg px-2 text-xs font-semibold">Save</button>
             </div>
         </div>
     )

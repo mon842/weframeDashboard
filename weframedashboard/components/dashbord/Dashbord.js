@@ -1,10 +1,10 @@
 import React from 'react'
-import Controller from './Controller'
+import Controller from './controller/Controller'
 import Todo from './Todo'
 import InWork from './InWork'
 import Review from './Review'
 import Done from './Done'
-import DevelopmentApp from './DevelopmentApp'
+import DevelopmentApp from './developmentApp/DevelopmentApp'
 
 const Dashbord = () => {
   return (

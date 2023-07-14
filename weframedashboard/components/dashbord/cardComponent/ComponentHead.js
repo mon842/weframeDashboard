@@ -2,9 +2,8 @@ import React from 'react'
 
 const ComponentHead = (props) => {
     return (
-        <div className='w-72 md:w-72 lg:w-52 p-5 flex  bg-white rounded-lg mb-3'>
-            <div className='text-base lg:text-xs w-12'>{props.text}</div>
-            {/* <div className='w-14 h-7 bg-white rounded-full ring-1 ring-gray-300 pl-2'> 5 </div> */}
+        <div className={`w-72 md:w-72 lg:w-52 p-5 flex  bg-white rounded-lg mb-3 ${props.color} border-l-4`}>
+            <div className='text-base lg:text-xs w-12 text-gray-600 font-bold'>{props.text}</div>
             <button className='w-12 h-8 bg-white rounded-full border-2 border-solid border-gray-400 mx-4'>
                 5
             </button>

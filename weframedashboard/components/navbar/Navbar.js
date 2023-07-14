@@ -17,6 +17,25 @@ const arr = [
 
 ]
 
+const navT = [
+    {
+        txt: 'Home'
+    },
+    {
+        txt: 'About us'
+    },
+    {
+        txt: 'News'
+    },
+    {
+        txt: 'User Policy'
+    },
+    {
+        txt: 'Contacts'
+    }
+
+]
+
 
 const Navbar = () => {
     const [hidden, setHidden] = useState('hidden');
@@ -27,7 +46,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className='border-gray-400'>
+        <div className='border-gray-200 border-b-4'>
 
             <nav className="bg-gray-100 ">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -44,26 +63,17 @@ const Navbar = () => {
 
 
 
-
                     <div className={`${hidden} w-full md:block md:w-auto `} id="navbar-default">
                         <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border  rounded-lg bg-gray-100 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-gray-100 ">
-                            <li className='pt-4'>
-                                <a href="#" className="block py-2 pl-3 pr-4 text-gray-500  rounded md:bg-transparent  md:p-0 " aria-current="page">Home</a>
-                            </li>
-                            <li  className='pt-4'>
-                                <a href="#" className="block py-2 pl-3 pr-4 text-gray-500  rounded md:bg-transparent  md:p-0 ">About Us</a>
-                            </li>
-                            <li  className='pt-4'>
-                                <a href="#" className=" block py-2 pl-3 pr-4 text-gray-500  rounded md:bg-transparent  md:p-0 ">News</a>
-                            </li>
-                            <li  className='pt-4'>
-                                <a href="#" className=" block py-2 pl-3 pr-4 text-gray-500  rounded md:bg-transparent  md:p-0 ">User Policy</a>
-                            </li>
-                            <li  className='pt-4'>
-                                <a href="#" className=" block py-2 pl-3 pr-4 text-gray-500  rounded md:bg-transparent  md:p-0 ">Contacts</a>
-                            </li>
+                            {
+                                navT.map(t => (
+                                    <li key={t.txt} className='pt-4'>
+                                        <a href="#" className=" block py-2 pl-3 pr-4 text-gray-500  rounded md:bg-transparent  md:p-0 ">{t.txt}</a>
+                                    </li>
+                                ))
+                            }
 
-                            <li  className='pt-4'>
+                            <li className='pt-4'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9 13.5C7.9 13.5 7 14.4 7 15.5C7 16.6 7.9 17.5 9 17.5C10.1 17.5 11 16.6 11 15.5C11 14.4 10.1 13.5 9 13.5ZM21 13.5C19.9 13.5 19 14.4 19 15.5C19 16.6 19.9 17.5 21 17.5C22.1 17.5 23 16.6 23 15.5C23 14.4 22.1 13.5 21 13.5ZM15 13.5C13.9 13.5 13 14.4 13 15.5C13 16.6 13.9 17.5 15 17.5C16.1 17.5 17 16.6 17 15.5C17 14.4 16.1 13.5 15 13.5Z" fill="#C3CAD9" />
                                 </svg>

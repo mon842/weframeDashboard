@@ -3,7 +3,7 @@ import React from 'react'
 
 const ComponentDec = (props) => {
   return (
-    <div className={`w-72 md:w-72 lg:w-52 bg-white rounded-lg m-2 p-2 ${props.border}`}>
+    <div className={`w-72 md:w-72 lg:w-52 bg-white rounded-lg my-3 p-2 ${props.border} text-gray-400`}>
         <div className='flex justify-between mt-4  '>
                 <p className='text-xs from-neutral-400'>Space Tasks 2</p>
                 <Image
@@ -14,7 +14,7 @@ const ComponentDec = (props) => {
                     alt='img'
                 />
             </div>
-            <p className='text-sm my-4'>Make Money Online Through</p>
+            <p className='text-xs my-4 text-gray-500 font-bold'>Make Money Online Through</p>
     </div>
   )
 }

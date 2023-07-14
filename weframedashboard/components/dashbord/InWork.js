@@ -1,16 +1,16 @@
 import React from 'react'
-import ComponentHead from './ComponentHead'
-import ComponentDec from './ComponentDec'
-import ComponentCard from './ComponentCard'
+import ComponentHead from './cardComponent/ComponentHead'
+import ComponentDec from './cardComponent/ComponentDec'
+import ComponentCard from './cardComponent/ComponentCard'
 
 const InWork = () => {
   return (
     <div className='mx-10 lg:mx-4 mb-5'>
-        <ComponentHead text={'IN WORK'}/>
+        <ComponentHead text={'IN WORK'}  color={'border-blue-500'}/>
         <ComponentDec/>
         <ComponentCard img={2} color={'red'} tm={1}/>
         <ComponentDec border={'border-4 border-red-400'}/>
-        <p>+ NEW TASK</p>
+        <p  className='font-bold text-gray-500'>+ NEW TASK</p>
     </div>
   )
 }
