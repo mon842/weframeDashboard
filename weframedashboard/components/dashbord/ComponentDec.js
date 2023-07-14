@@ -3,7 +3,7 @@ import React from 'react'
 
 const ComponentDec = (props) => {
   return (
-    <div className={`bg-white w-52 rounded-lg m-2 p-2 ${props.border}`}>
+    <div className={`w-72 md:w-72 lg:w-52 bg-white rounded-lg m-2 p-2 ${props.border}`}>
         <div className='flex justify-between mt-4  '>
                 <p className='text-xs from-neutral-400'>Space Tasks 2</p>
                 <Image

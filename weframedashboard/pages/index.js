@@ -9,7 +9,7 @@ import { Inter } from 'next/font/google'
 
 export default function Home() {
   return (
-    <div>
+    <div className='bg-gray-100 '>
       <Navbar />
       <Chat />
       <div className='grid grid-cols-1  lg:grid-cols-4 md:grid-cols-1 sm:grid-cols-1 mt-2'>

@@ -4,7 +4,7 @@ import ComponentDec from './ComponentDec'
 
 const Done = () => {
   return (
-    <div className='mx-16 mt-5 right-2'>
+    <div className='ml-8 md:ml-14 lg:ml-20 mt-5 right-2'>
       <ComponentHead text={'Done'}/>
         <ComponentDec  border={''}/>
     </div>

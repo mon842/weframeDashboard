@@ -2,7 +2,7 @@ import React from 'react'
 
 const ComponentHead = (props) => {
     return (
-        <div className='p-5 flex space-x-4 bg-white w-52 rounded-lg mb-3'>
+        <div className='w-72 md:w-72 lg:w-52 p-5 flex space-x-4 bg-white rounded-lg mb-3'>
             <div className='font-sm'>{props.text}</div>
             <div className='w-14 h-7 bg-white rounded-full ring-1 ring-gray-300 pl-2'> 5 </div>
             <div>

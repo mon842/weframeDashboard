@@ -3,7 +3,7 @@ import React from 'react'
 import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
 const ComponentCard = ({img,color,tm}) => {
     return (
-        <div className='w-52 bg-white pb-2 rounded-lg'>
+        <div className='w-72 md:w-72 lg:w-52 bg-white pb-2 rounded-lg'>
             <Image
                 src={`/Image${img}.png`}
                 height={350}

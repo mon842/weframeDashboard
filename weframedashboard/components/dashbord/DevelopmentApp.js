@@ -4,7 +4,7 @@ import PlayCircleFilledWhiteIcon from '@mui/icons-material/PlayCircleFilledWhite
 
 const DevelopmentApp = () => {
   return (
-    <div className='bg-white w-3/4 rounded-lg p-5'>
+    <div className='mx-8 bg-white w-4/5 rounded-lg p-5 mb-6'>
 
       <div className='flex justify-between mt-3'>
         <div className='flex justify-between'>

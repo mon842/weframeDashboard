@@ -5,7 +5,7 @@ import AddTask from './AddTask'
 
 const Review = () => {
   return (
-    <div className='m-4 '>
+    <div className='m-4 mb-6'>
         <ComponentHead text={'REVIEW'}/>
         <ComponentDec  border={''}/>
         <ComponentDec  border={''}/>

@@ -5,7 +5,7 @@ import ComponentDec from './ComponentDec'
 
 const Todo = () => {
   return (
-    <div>
+    <div className='mx-10 lg:mx-4 mb-5'>
         <ComponentHead text={'TO DO'}/>
         <ComponentCard img={1} color={'gray'} tm={6}/>
         <ComponentDec  border={''}/>
