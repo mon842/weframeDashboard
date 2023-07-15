@@ -9,7 +9,7 @@ const ComponentHead = (props) => {
 
                 <div className='text-base lg:text-xs w-12 text-gray-600 font-bold'>{props.text}</div>
 
-                <button className='w-12 h-8 bg-white rounded-full border-2 border-solid border-gray-400 mx-4'>
+                <button className='w-8 h-8 bg-white rounded-full border-2 border-solid border-gray-400 mx-4'>
                     5
                 </button>
 

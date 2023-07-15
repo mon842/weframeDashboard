@@ -119,8 +119,8 @@ const Chat = () => {
                                         className='rounded-full'
                                         src={`/dp${profile.n}.png`}
                                         alt='img'
-                                        height={30}
-                                        width={30}
+                                        height={42}
+                                        width={42}
                                     />
 
                                 </button>
