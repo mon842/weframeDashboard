@@ -25,7 +25,7 @@ const links = [
 
 const Socials = () => {
     return (
-        <div className='rounded-full border-solid border-2 border-gray-300 flex justify-center items-center'>
+        <div className='w-64 md:w-72 lg:w-64 rounded-full border-solid border-2 border-gray-300 flex justify-center items-center'>
             {
                 links.map(link => (
                     <svg key={link.fill} className='m-2' xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">

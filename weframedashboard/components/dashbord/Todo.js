@@ -5,9 +5,9 @@ import ComponentDec from './cardComponent/ComponentDec'
 
 const Todo = () => {
   return (
-    <div className='flex justify-center items-center mt-4 mb-5'>
+    <div className='flex justify-center items-center mb-5'>
       <div>
-      <ComponentHead text={'TO DO'} color={'border-purple-500'}/>
+      <ComponentHead text={'TO DO'} color={'bg-purple-500'}/>
         <ComponentCard img={1} color={'gray'} tm={6}/>
         <ComponentDec  border={''}/>
         <ComponentDec  border={''}/>

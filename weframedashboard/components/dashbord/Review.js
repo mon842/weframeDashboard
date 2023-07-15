@@ -5,13 +5,17 @@ import AddTask from './AddTask'
 
 const Review = () => {
   return (
-    <div className='ml-12 lg:ml-4 mb-6  mt-4 '>
-        <ComponentHead text={'REVIEW'}  color={'border-yellow-500'}/>
+    <div className='flex justify-center mb-5 m-2'>
+      <div>
+        <ComponentHead text={'REVIEW'}  color={'bg-yellow-500'}/>
         <ComponentDec  border={''}/>
         <ComponentDec  border={''}/>
         <AddTask/>
+      </div>
+        
     </div>
   )
 }
 
 export default Review
+// flex justify-center 

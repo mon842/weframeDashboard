@@ -1,17 +1,17 @@
-import Image from 'next/image'
 import React from 'react'
 import Features from './Features'
 import Socials from './Socials'
 
+
 const ChatDetails = () => {
   return (
-    <div className='m-8'>
+    <div className='mx-14 '>
 
-      <div class="grid grid-rows-5 grid-flow-col gap-4">
-        <div class="row-span-2 ">
+      <div className="grid grid-rows-5 grid-flow-col gap-4">
+        <div className="row-span-2 ">
 
-          <div class="grid grid-rows-4 grid-flow-col gap-4">
-            <div class="row-span-1 ">
+          <div className="grid grid-rows-4 grid-flow-col gap-4">
+            <div className="row-span-1 ">
               <div className="flex justify-between px-12">
 
                 <button className='bg-white rounded-full'>
@@ -32,7 +32,26 @@ const ChatDetails = () => {
               </div>
             </div>
 
-            <div class="row-span-2 flex justify-center items-center relative">
+
+            <div class="relative row-span-2 flex justify-center items-center">
+
+              <svg className='absolute z-0 w-40 h-40'  viewBox="0 0 132 133" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle id="Base" cx="66" cy="66.5" r="65" stroke="#DADEE6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <svg className='absolute z-1 w-40 h-40' viewBox="0 0 132 133" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="Line" d="M66 1.5C30.1015 1.5 1 30.6015 1 66.5C1 102.399 30.1015 131.5 66 131.5V131.5C101.899 131.5 131 102.399 131 66.5" stroke="#3361FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <div className='relative'>
+                <img className='rounded-full w-32 h-32' src="/dp6.png" alt="Image" />
+
+                <span class=" absolute top-10 left-full w-8 h-8 bg-blue-500 text-white text-xs font-bold rounded-full pl-3 pt-2">3</span>
+                  
+              </div>
+
+            </div>
+
+            {/* <span class=" ml-2 inline-flex items-center justify-center w-6 h-6 bg-blue-500 text-white text-xs font-bold rounded-full">3</span> */}
+            {/* <div className="row-span-2 flex justify-center items-center relative">
 
 
               <svg className='absolute z-0' width="132" height="133" viewBox="0 0 132 133" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,6 +61,7 @@ const ChatDetails = () => {
                 <path id="Line" d="M66 1.5C30.1015 1.5 1 30.6015 1 66.5C1 102.399 30.1015 131.5 66 131.5V131.5C101.899 131.5 131 102.399 131 66.5" stroke="#3361FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
 
+
               <Image
                 className='rounded-full'
                 src={'/dp6.png'}
@@ -49,11 +69,15 @@ const ChatDetails = () => {
                 height={100}
                 width={100}
               />
-            </div>
+              <div className="w-7 h-7 px-3 py-1 left-[188px] top-[50px] absolute bg-blue-600 rounded-2xl shadow border border-blue-600 justify-center items-center gap-2.5 inline-flex">
+                <div className="grow shrink basis-0 h-5 text-center text-white text-xs font-black leading-tight">2</div>
+              </div>
 
-            <div class="row-span-1 flex justify-center items-center mt-4">
+            </div> */}
+
+            <div className="row-span-1 flex justify-center items-center mt-4">
               <div>
-                <p className='text-lg font-bold text-gray-500'>Hello Alfred Bryant</p>
+                <p className='text-lg md:text-xl font-bold text-gray-500'>Hello Alfred Bryant</p>
                 <p className='text-sm font-semibold text-gray-300'>adrain.nader@yahoo.com</p>
               </div>
 
@@ -61,11 +85,11 @@ const ChatDetails = () => {
           </div>
 
         </div>
-        <div class="row-span-2 ">
+        <div className="row-span-2 flex justify-center items-center">
           <Features />
         </div>
 
-        <div class="row-span-1 mt-2">
+        <div className="row-span-1 mt-2 flex justify-center items-center ">
           <Socials />
         </div>
       </div>

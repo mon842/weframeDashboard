@@ -3,9 +3,9 @@ import React from 'react'
 import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
 const ComponentCard = ({img,color,tm}) => {
     return (
-        <div className='w-72 md:w-72 lg:w-52 bg-white pb-2 rounded-lg text-gray-400 font-semibold'>
+        <div className='drop-shadow-md w-72 md:w-72 lg:w-52 bg-white pb-2 rounded-lg text-gray-400 font-semibold'>
 
-            <img className='h-30 w-30 ' src={`/Image${img}.png`} alt='img' />
+            <img className='h-52 w-72 lg:h-30 lg:w-30 ' src={`/Image${img}.png`} alt='img' />
             <div className='flex justify-between mt-4 mx-2'>
                 <p className='text-xs from-neutral-400 '>Space Tasks 2</p>
                 <img className='h-5 w-5 rounded-full' src={'/dp5.png'} alt='img' />
