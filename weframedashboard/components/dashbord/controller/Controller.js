@@ -36,7 +36,7 @@ const arr = [
 
 const Controller = () => {
     return (
-        <div className='inline-flex  py-6 rounded-lg sm:px-2'>
+        <div className='inline-flex  py-6 rounded-lg sm:px-2 border-b-2 border-gray-300'>
 
             <div className=' flex justify-center px-2 space-x-7 lg:space-x-9' >
                 <button className='lg:hidden bg-white rounded-full m-3'>
@@ -67,7 +67,7 @@ const Controller = () => {
             </div>
 
 
-            <div className='hidden flex ml-3 lg:block'>
+            <div className='hidden flex ml-3 lg:block drop-shadow-md'>
                 <form className='w-52'>
                     <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
                     <div class="relative">
